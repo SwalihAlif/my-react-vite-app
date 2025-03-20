@@ -2,6 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Hello from './components/hello'
+import Greet from './components/greet'
+import QuoteOfTheDay from './components/quote'
+import SyntaxHtmlJsx from './components/syntax'
+import GreetProp from './components/greetProp'
+import GreetDefaultProp from './components/DefProp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,8 +34,15 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <h1>Hello World!</h1>
-      <h1>Hi Swalih!</h1>
+      <Hello /> {/* Using the Hello component */}
+      <Greet /> {/* Using the Hello component */}
+      <QuoteOfTheDay /> {/* Using the Hello component */}
+      <SyntaxHtmlJsx />
+      <GreetProp name="Alice" age= {20}/>
+      <GreetDefaultProp />
+  
+
+      
     </>
   )
 }
