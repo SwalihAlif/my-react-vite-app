@@ -9,6 +9,7 @@ import SyntaxHtmlJsx from './components/syntax'
 import GreetProp from './components/greetProp'
 import GreetDefaultProp from './components/DefProp'
 import Counter from './components/counter'
+import ShowMessage from './components/toggleMangement'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -41,8 +42,11 @@ function App() {
       <SyntaxHtmlJsx />
       <GreetProp name="Alice" age= {20}/>
       <GreetDefaultProp />
-      <h1>useState Example - counter</h1>
+      <h3>useState Example - counter</h3>
       <Counter />
+      <h3 style={{color: "WindowText"}}>Toggle Message with useState</h3>
+      <ShowMessage />
+      
   
 
       
