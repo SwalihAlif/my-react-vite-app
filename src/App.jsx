@@ -8,6 +8,7 @@ import QuoteOfTheDay from './components/quote'
 import SyntaxHtmlJsx from './components/syntax'
 import GreetProp from './components/greetProp'
 import GreetDefaultProp from './components/DefProp'
+import Counter from './components/counter'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -40,6 +41,8 @@ function App() {
       <SyntaxHtmlJsx />
       <GreetProp name="Alice" age= {20}/>
       <GreetDefaultProp />
+      <h1>useState Example - counter</h1>
+      <Counter />
   
 
       
